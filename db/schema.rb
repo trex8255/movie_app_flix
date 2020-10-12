@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_11_204206) do
+ActiveRecord::Schema.define(version: 2020_10_12_033048) do
 
   create_table "characterizations", force: :cascade do |t|
     t.integer "movie_id", null: false
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 2020_10_11_204206) do
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.integer "total_gross"
+    t.integer "total_gross", limit: 8
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.text "description"
