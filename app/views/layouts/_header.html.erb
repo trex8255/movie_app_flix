@@ -1,0 +1,32 @@
+    <header>
+      
+      <nav>
+      <ul class="left">
+      <%= link_to image_tag("logo.png"), root_path %>
+  <li>
+    <%= link_to "Released", movies_path %>
+  </li>
+  <li>
+  <%= link_to "Upcoming", filtered_movies_path(:upcoming) %>
+  </li>
+</ul>
+
+<ul class="right">
+<%if current_user%>
+<li>
+  <%=link_to current_user.name, current_user%>
+</li>
+<li>
+  <%= link_to 'Sign out', session_path, class: "button", method: :delete %>
+</li>
+  <% else %>
+  <li>
+    <%= link_to "Sign in", new_session_path, class: "button" %>
+  </li>
+  <li>
+    <%= link_to "Sign Up", signup_path, class: "button" %>
+  </li>
+  <% end %>
+</ul>
+</nav>
+    </header>
