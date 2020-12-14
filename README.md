@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Movie Review App
 
-Things you may want to cover:
+* Ruby version: 6
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku: https://arcane-wildwood-55023.herokuapp.com/
+A movie review app called J-flix. It was designed in raw rails code without devise or active_admin gems. A user can write a review, leave a rating with stars, hit a like button on a specific movie they like.
